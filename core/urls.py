@@ -28,7 +28,11 @@ urlpatterns = patterns('',
     url(r'location/(?P<pk>\d+)/update/$', login_required(coreviews.LocationUpdateView.as_view()), name='location_update'),
     url(r'location/(?P<pk>\d+)/review/create/$', login_required(coreviews.ReviewCreateView.as_view()), name='review_create'),
     url(r'location/(?P<pk>\d+)/review/update/$', login_required(coreviews.ReviewUpdateView.as_view()), name='review_update'), 
+    url(r'privacypolicy/$', coreviews.privacypolicy),
+    url(r'termsofuse/$', coreviews.termsofuse),
+    url(r'subscribe/$', coreviews.subscribe),
     url(r'entrance/$', coreviews.entrance),
+
 
 )
 

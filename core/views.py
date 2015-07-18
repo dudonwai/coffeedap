@@ -79,5 +79,20 @@ class ReviewUpdateView(UpdateView):
         return self.object.location.get_absolute_url()
 
 @sitegate_view(widget_attrs={'class': 'form-control', 'placeholder': lambda f: f.label}, template='form_bootstrap3') # This also prevents logged in users from accessing our sign in/sign up page.
+def privacypolicy(request):
+    return render(request, 'base/privacypolicy.html', {'title': 'Sign in & Sign up'})
+
+
+@sitegate_view(widget_attrs={'class': 'form-control', 'placeholder': lambda f: f.label}, template='form_bootstrap3') # This also prevents logged in users from accessing our sign in/sign up page.
+def termsofuse(request):
+    return render(request, 'base/termsofuse.html', {'title': 'Sign in & Sign up'})
+
+
+@sitegate_view(widget_attrs={'class': 'form-control', 'placeholder': lambda f: f.label}, template='form_bootstrap3') # This also prevents logged in users from accessing our sign in/sign up page.
+def subscribe(request):
+    return render(request, 'base/subscribe.html', {'title': 'Sign in & Sign up'})
+
+
+@sitegate_view(widget_attrs={'class': 'form-control', 'placeholder': lambda f: f.label}, template='form_bootstrap3') # This also prevents logged in users from accessing our sign in/sign up page.
 def entrance(request):
     return render(request, 'base/entrance.html', {'title': 'Sign in & Sign up'})
