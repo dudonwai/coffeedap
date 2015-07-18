@@ -14,7 +14,6 @@ class LandingView(TemplateView):
 class LocationListView(ListView):
     model = coremodels.Location
     template_name = 'location/list.html'
-	
 
 class LocationListView(ListView):
     model = coremodels.Location
@@ -82,11 +81,3 @@ class ReviewUpdateView(UpdateView):
 @sitegate_view(widget_attrs={'class': 'form-control', 'placeholder': lambda f: f.label}, template='form_bootstrap3') # This also prevents logged in users from accessing our sign in/sign up page.
 def entrance(request):
     return render(request, 'base/entrance.html', {'title': 'Sign in & Sign up'})
-
-
-
-
-
-
-
-
