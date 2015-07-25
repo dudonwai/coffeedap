@@ -7,7 +7,7 @@
 
 <head>
     {% analytical_head_top %}
-    {% optimizely %}
+
     <script src="//cdn.optimizely.com/js/3207911415.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,8 +37,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-{% analytical_head_bottom %}
-
+    {% analytical_head_bottom %}
+    {% optimizely %}
 </head>
 
 <body id="page-top" class="index">
@@ -674,7 +674,8 @@
     <!-- Custom Theme JavaScript -->
      <script src= "{% static "js/agency.js" %}"></script>
 
-{% analytical_head_bottom %}
+    {% analytical_head_bottom %}
+    {% optimizely %}
 </body>
 
 </html>
