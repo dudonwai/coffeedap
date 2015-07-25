@@ -163,5 +163,4 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWSAccessKeyId')
 
 AWS_STORAGE_BUCKET_NAME = 'petrorecruit'
 
-
-
+OPTIMIZELY_ACCOUNT_NUMBER = '3207911415'
