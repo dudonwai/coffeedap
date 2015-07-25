@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     'sitegate',
     'bootstrap3',
     'bootstrap_pagination',
+    'analytical',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -162,5 +163,5 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWSAccessKeyId')
 
 AWS_STORAGE_BUCKET_NAME = 'petrorecruit'
 
-
+OPTIMIZELY_ACCOUNT_NUMBER = '3207911415'
 
