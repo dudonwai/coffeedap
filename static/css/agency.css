@@ -1001,14 +1001,16 @@ section#contact {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #d4a432;
+    border-color: #fed136;
+    /*#d4a432;
+    */
     border-radius: 0px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #d4a432;
+    background-color: #fed136;
 }
 
 .navbar-default .navbar-nav>.active>a {
