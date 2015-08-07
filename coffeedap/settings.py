@@ -56,8 +56,6 @@ INSTALLED_APPS = (
     'bootstrap3',
     'bootstrap_pagination',
     'analytical',
-    'boto',
-    'django-storages',
 )
 
 MIDDLEWARE_CLASSES = (
