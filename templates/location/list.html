@@ -15,7 +15,7 @@
         {% if location.address %}<p><b>Location: </b>{{ location.address }}</p>{% endif %}
         {% if location.hours %}<p>{{ location.hours }}</p>{% endif %}
         {% if location.image_file %}
-            <img class="img-responsive" src="{{ location.image_file.url }}"></img>
+            <img class="img-responsive" src="{{ location.image_file.image }}"></img>
         {% endif %}
         {% include 'location/specifics.html' with location=location %}
         <p>{{ location.description }}</p>
