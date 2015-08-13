@@ -33,6 +33,5 @@ urlpatterns = patterns('',
     url(r'subscribe/$', coreviews.subscribe),
     url(r'entrance/$', coreviews.entrance),
 
-
 )
 
